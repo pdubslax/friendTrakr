@@ -141,40 +141,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFz-3H-2vu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFz-3H-2vu">
                                 <rect key="frame" x="73" y="97" width="174" height="161"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="161" id="ESH-UB-fwV"/>
-                                    <constraint firstAttribute="width" constant="174" id="mI6-dO-iYq"/>
-                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="First Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-Ul-yJS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="First Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-Ul-yJS">
                                 <rect key="frame" x="20" y="284" width="280" height="46"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fVH-xF-VNS">
-                                <rect key="frame" x="73" y="403" width="174" height="3"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fVH-xF-VNS">
+                                <rect key="frame" x="47" y="403" width="227" height="3"/>
+                                <color key="progressTintColor" red="0.41370143149999999" green="1" blue="0.47096681620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-ww-NZx">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-ww-NZx">
                                 <rect key="frame" x="48" y="499" width="224" height="30"/>
                                 <state key="normal" title="Friendship History">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-IA-hQB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-IA-hQB">
                                 <rect key="frame" x="48" y="432" width="224" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="8HO-IB-Oxv"/>
-                                </constraints>
                                 <state key="normal" title="Contact">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upl-CC-pRn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upl-CC-pRn">
                                 <rect key="frame" x="0.0" y="352" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -182,20 +177,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="uvX-Ul-yJS" firstAttribute="leading" secondItem="8sF-KD-KKk" secondAttribute="leading" constant="20" symbolic="YES" id="GpL-JO-roH"/>
-                            <constraint firstItem="upl-CC-pRn" firstAttribute="top" secondItem="8sF-KD-KKk" secondAttribute="top" constant="224" id="IWL-xV-w41"/>
-                            <constraint firstItem="upl-CC-pRn" firstAttribute="trailing" secondItem="8sF-KD-KKk" secondAttribute="trailing" id="Ku0-sg-2rY"/>
-                            <constraint firstAttribute="bottom" secondItem="fVH-xF-VNS" secondAttribute="bottom" constant="145" id="LxD-u9-1Bu"/>
-                            <constraint firstItem="NXA-ww-NZx" firstAttribute="trailing" secondItem="Z1I-IA-hQB" secondAttribute="trailing" id="b9Q-d6-khR"/>
-                            <constraint firstAttribute="bottom" secondItem="NXA-ww-NZx" secondAttribute="bottom" constant="20" symbolic="YES" id="cNV-p7-sdg"/>
-                            <constraint firstAttribute="trailing" secondItem="uvX-Ul-yJS" secondAttribute="trailing" constant="20" symbolic="YES" id="cgV-vj-wqe"/>
-                            <constraint firstItem="Z1I-IA-hQB" firstAttribute="centerX" secondItem="fVH-xF-VNS" secondAttribute="centerX" id="f5d-vM-Q7a"/>
-                            <constraint firstItem="NXA-ww-NZx" firstAttribute="leading" secondItem="Z1I-IA-hQB" secondAttribute="leading" id="i50-bE-xG9"/>
-                            <constraint firstAttribute="bottom" secondItem="Z1I-IA-hQB" secondAttribute="bottom" constant="80" id="lUl-bd-8QX"/>
-                            <constraint firstItem="upl-CC-pRn" firstAttribute="leading" secondItem="8sF-KD-KKk" secondAttribute="leading" id="mqR-d2-efl"/>
-                            <constraint firstItem="upl-CC-pRn" firstAttribute="centerX" secondItem="fVH-xF-VNS" secondAttribute="centerX" id="nj1-a9-Wmu"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="contactbuttonlabel" destination="Z1I-IA-hQB" id="R5a-GL-M6h"/>
